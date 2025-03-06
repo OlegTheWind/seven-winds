@@ -76,13 +76,22 @@ const MainContent: React.FC<MainContentProps> = ({
                                 <tr>
                                     <td colSpan={6}>
                                         <form
-                                            style={{display:'flex', justifyContent:'flex-end'}}
+                                            style={{
+                                                display: 'flex',
+                                                justifyContent: 'flex-end',
+                                            }}
                                             onSubmit={handleSubmit}
                                             className={styles.form}
-                                        >   <input 
-                                                style={{widows: '110px', visibility:'hidden'}} />
+                                        >
+                                            {' '}
                                             <input
-                                            className={styles.form_color}
+                                                style={{
+                                                    widows: '110px',
+                                                    visibility: 'hidden',
+                                                }}
+                                            />
+                                            <input
+                                                className={styles.form_color}
                                                 style={{ width: '500px' }}
                                                 type="text"
                                                 placeholder="Наименование работ"
@@ -96,7 +105,7 @@ const MainContent: React.FC<MainContentProps> = ({
                                                 required
                                             />
                                             <input
-                                            className={styles.form_color}
+                                                className={styles.form_color}
                                                 type="number"
                                                 placeholder="Основная з/п"
                                                 value={formData.salary}
@@ -124,7 +133,7 @@ const MainContent: React.FC<MainContentProps> = ({
                                                 }
                                             />
                                             <input
-                                            className={styles.form_color}
+                                                className={styles.form_color}
                                                 type="number"
                                                 placeholder="Накладные расходы"
                                                 value={formData.overheads}
@@ -138,15 +147,16 @@ const MainContent: React.FC<MainContentProps> = ({
                                                 }
                                             />
                                             <input
-
-                                            className={styles.form_color}
+                                                className={styles.form_color}
                                                 type="number"
                                                 placeholder="Сметная прибыль"
                                                 value={formData.estimatedProfit}
                                                 onChange={(e) =>
                                                     setFormData({
                                                         ...formData,
-                                                        estimatedProfit: Number(e.target.value),
+                                                        estimatedProfit: Number(
+                                                            e.target.value,
+                                                        ),
                                                     })
                                                 }
                                             />

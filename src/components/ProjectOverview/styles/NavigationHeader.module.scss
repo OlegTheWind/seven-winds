@@ -15,17 +15,16 @@ $paynes_grey_color: rgb(65, 65, 68);
 }
 .text_line {
     display: flex;
-  box-shadow: 0 5px 0px #FFFFFF;
+    box-shadow: 0 5px 0px #ffffff;
 }
 
-.botton_arrow::before{
+.botton_arrow::before {
     content: url('../../../../public/icon/button_arrow.svg');
 }
 
-
-.botton_cobe::before{
+.botton_cobe::before {
     content: url('../../../../public/icon/button_cobe.svg');
 }
-.button_to_bottom::before{
+.button_to_bottom::before {
     content: url('../../../../public/icon/button_to_bottom.svg');
 }

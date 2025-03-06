@@ -13,7 +13,7 @@ const Row: React.FC<{
 }> = ({ row, level, entityId, onDataChanged }) => {
     const [isFormVisible, setIsFormVisible] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
-    const formRef = useRef<HTMLDivElement>(null!); 
+    const formRef = useRef<HTMLDivElement>(null!);
     const [formData, setFormData] = useState<{
         equipmentCosts: number;
         estimatedProfit: number;
@@ -22,7 +22,7 @@ const Row: React.FC<{
         materials: number;
         mimExploitation: number;
         overheads: number;
-        parentId: number | null; 
+        parentId: number | null;
         rowName: string;
         salary: number;
         supportCosts: number;
@@ -34,7 +34,7 @@ const Row: React.FC<{
         materials: 0,
         mimExploitation: 0,
         overheads: 0,
-        parentId: row.id,  
+        parentId: row.id,
         rowName: '',
         salary: 0,
         supportCosts: 0,
@@ -154,14 +154,21 @@ const Row: React.FC<{
                         colSpan={6}
                         style={{ paddingLeft: `${(level + 1) * 30}px` }}
                     >
-                        <div ref={formRef} >
+                        <div ref={formRef}>
                             <form
-                                style={{display:'flex', justifyContent:'flex-end'}}
+                                style={{
+                                    display: 'flex',
+                                    justifyContent: 'flex-end',
+                                }}
                                 onSubmit={handleSubmit}
-                                className={styles.form}                    
+                                className={styles.form}
                             >
-                                <input 
-                                    style={{widows: '110px', visibility:'hidden'}} />
+                                <input
+                                    style={{
+                                        widows: '110px',
+                                        visibility: 'hidden',
+                                    }}
+                                />
                                 <input
                                     style={{ width: '500px' }}
                                     className={styles.form_color}
@@ -189,7 +196,7 @@ const Row: React.FC<{
                                     }
                                 />
                                 <input
-                                className={styles.form_color}
+                                    className={styles.form_color}
                                     type="number"
                                     placeholder="Оборудование"
                                     value={formData.equipmentCosts}
@@ -203,7 +210,7 @@ const Row: React.FC<{
                                     }
                                 />
                                 <input
-                                className={styles.form_color}
+                                    className={styles.form_color}
                                     type="number"
                                     placeholder="Накладные расходы"
                                     value={formData.overheads}
@@ -215,14 +222,16 @@ const Row: React.FC<{
                                     }
                                 />
                                 <input
-                                className={styles.form_color}
+                                    className={styles.form_color}
                                     type="number"
                                     placeholder="Сметная прибыль"
                                     value={formData.estimatedProfit}
                                     onChange={(e) =>
                                         setFormData({
                                             ...formData,
-                                            estimatedProfit: Number(e.target.value),
+                                            estimatedProfit: Number(
+                                                e.target.value,
+                                            ),
                                         })
                                     }
                                 />
