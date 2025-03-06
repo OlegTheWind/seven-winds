@@ -1,3 +1,4 @@
+#Клонировать main Ветку, на gh-pages к сжалению билд сломался
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
