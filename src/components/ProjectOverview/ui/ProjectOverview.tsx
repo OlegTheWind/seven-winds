@@ -7,7 +7,7 @@ import useGetTreeRows from '../hoks/useGetTreeRows';
 import useFetchId from '../hoks/useFetchId';
 
 const ProjectOverview: React.FC = () => {
-    const { entity, loading } = useFetchId();
+    const { entity } = useFetchId();
     const { list, fetchData } = useGetTreeRows();
 
     const refreshData = useCallback(async () => {

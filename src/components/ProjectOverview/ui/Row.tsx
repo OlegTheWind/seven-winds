@@ -45,7 +45,7 @@ const Row: React.FC<{
         rId: row.id,
     });
 
-    const { createEntity, loading: createLoading } = useCreateEntity({
+    const { createEntity } = useCreateEntity({
         id: entityId,
         requestData: formData,
     });

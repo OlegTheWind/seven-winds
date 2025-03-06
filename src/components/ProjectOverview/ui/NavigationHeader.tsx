@@ -5,8 +5,8 @@ import useGetTreeRows from '../hoks/useGetTreeRows';
 import useFetchId from '../hoks/useFetchId';
 
 const NavigationHeader: React.FC<{id?: number}> = () => {
-    const { list, fetchData } = useGetTreeRows();
-    const { entity, loading } = useFetchId();
+    const {  fetchData } = useGetTreeRows();
+    const { entity } = useFetchId();
 
     const { createEntity } = useCreateEntity({
         id: entity?.id!,
