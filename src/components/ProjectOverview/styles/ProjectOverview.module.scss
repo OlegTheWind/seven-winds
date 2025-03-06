@@ -1,0 +1,13 @@
+$text_color: #ffffff;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: $text_color;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}

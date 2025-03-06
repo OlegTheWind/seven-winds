@@ -1,0 +1,31 @@
+$powder_color: rgb(39, 39, 42);
+$paynes_grey_color: rgb(65, 65, 68);
+
+.header {
+    background-color: $powder_color;
+    display: flex;
+    flex-direction: column;
+    height: 88px;
+}
+.top_header_line {
+    box-shadow: 0 1px 1px $paynes_grey_color;
+}
+.bottom_header_line {
+    box-shadow: inset 0px -1px 1px $paynes_grey_color;
+}
+.text_line {
+    display: flex;
+  box-shadow: 0 5px 0px #FFFFFF;
+}
+
+.botton_arrow::before{
+    content: url('../../../../public/icon/button_arrow.svg');
+}
+
+
+.botton_cobe::before{
+    content: url('../../../../public/icon/button_cobe.svg');
+}
+.button_to_bottom::before{
+    content: url('../../../../public/icon/button_to_bottom.svg');
+}

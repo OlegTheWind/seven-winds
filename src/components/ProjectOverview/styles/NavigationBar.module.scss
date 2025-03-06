@@ -1,0 +1,30 @@
+$powder-color: #27272a;
+
+.navigation_bar {
+    background-color: $powder-color;
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.button_icon {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+
+    &::before {
+        content: url('../../../../public/icon/icon_button.svg');
+        height: 18px;
+    }
+}
+
+.blur_background {
+    position: relative;
+    background-color: #A1A1AA; 
+    backdrop-filter: blur(10px);
+    
+  
+  }

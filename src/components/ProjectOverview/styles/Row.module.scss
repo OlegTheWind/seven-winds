@@ -1,0 +1,29 @@
+$Noble_Black-color: #202124;
+.form_color {
+    background-color: $Noble_Black-color;
+    color: #FFFFFF;
+}
+.icon_button_add::before {
+    content: url('../../../../public/icon/button_add.svg');
+    display: block;
+}
+
+.icon_button_delete {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.icon_button_delete::before {
+    content: url('../../../../public/icon/bitton_delete.svg');
+    width: 18px;
+    height: 18px;
+}
+
+.icon_button_add:hover + .icon_button_delete {
+    display: inline-flex;
+    opacity: 1;
+}
