@@ -14,7 +14,7 @@ const ProjectOverview: React.FC = () => {
         if (entity?.id) {
             await fetchData(entity.id);
         }
-    }, [entity?.id, fetchData]);
+    }, [entity?.id]);
 
     useEffect(() => {
         refreshData();
